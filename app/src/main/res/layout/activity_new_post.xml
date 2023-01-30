@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#DEDDE1"
+    android:orientation="vertical"
+    tools:context=".NewPost">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:orientation="horizontal"
+        android:weightSum="1">
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:orientation="vertical"
+            app:cardCornerRadius="100dp"
+            app:cardElevation="0dp">
+
+            <ImageView
+                android:id="@+id/request_dp"
+                android:src="@drawable/dpimage"
+                android:layout_width="80dp"
+                android:layout_height="80dp" />
+        </androidx.cardview.widget.CardView>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/order_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginTop="10dp"
+                    android:focusableInTouchMode="true"
+                    android:fontFamily="@font/alice"
+                    android:scrollHorizontally="true"
+                    android:text="Name"
+                    android:textColor="@color/black"
+                    android:textSize="20sp"
+                    android:textStyle="bold" />
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+                <Button
+                    android:layout_width="95dp"
+                    android:layout_height="35dp"
+                    android:layout_marginStart="15dp"
+                    android:textAllCaps="false"
+                    android:textColor="@color/purple_700"
+                    android:minHeight="0dp"
+                    android:gravity="center"
+                    android:textSize="13sp"
+                    android:backgroundTint="@color/white"
+                    android:text="Public"
+                    android:id="@+id/request_confirm"/>
+                <Button
+                    android:layout_width="95dp"
+                    android:layout_height="35dp"
+                    android:layout_marginStart="30dp"
+                    android:text="+ Album"
+                    android:textSize="13sp"
+                    android:textColor="@color/purple_700"
+                    android:textAllCaps="false"
+                    android:backgroundTint="@color/white"
+                    android:id="@+id/add_Pic"/>
+
+
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/white"
+        android:layout_marginTop="30dp"
+        android:orientation="vertical">
+
+        <ImageView
+            android:id="@+id/postImage"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:src="@drawable/background"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+        <EditText
+            android:id="@+id/post_hashtag"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="200dp"
+            android:gravity="start"
+            android:hint="Type to add hashtag"
+            android:textStyle="bold"
+            android:padding="16dp"
+            android:textSize="22sp"
+            app:layout_constraintTop_toBottomOf="@id/postImage"
+            tools:layout_editor_absoluteX="37dp" />
+
+        <EditText
+            android:id="@+id/post_content"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="250dp"
+            android:fontFamily="@font/alice"
+            android:gravity="start"
+            android:hint="Whats on your mind?..."
+            android:padding="16dp"
+            android:textSize="28sp"
+            app:layout_constraintTop_toBottomOf="@id/postImage"
+            tools:layout_editor_absoluteX="37dp" />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="296dp"
+            android:layout_marginTop="344dp"
+            android:text="Post"
+            android:id="@+id/newPost"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/postImage" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</LinearLayout>

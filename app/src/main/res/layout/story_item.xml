@@ -1,0 +1,40 @@
+<FrameLayout android:layout_width="wrap_content"
+
+    android:layout_height="wrap_content"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <androidx.cardview.widget.CardView
+        android:layout_width="110dp"
+        android:layout_height="150dp"
+        android:layout_gravity="center"
+        android:layout_margin="5dp"
+        android:elevation="8dp"
+        app:cardCornerRadius="8dp">
+
+        <ImageView
+            android:id="@+id/story"
+            android:layout_width="130dp"
+            android:layout_height="150dp"
+            android:padding="-4dp" />
+        <ImageView
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:background="@drawable/et_shape"
+            android:layout_margin="5dp"
+            android:id="@+id/story_dp"/>
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="130dp"
+            android:textSize="14sp"
+            android:layout_marginStart="5dp"
+            android:text="name of poster"
+            android:id="@+id/story_name"
+            android:textColor="@color/white"
+            android:textStyle="bold"
+            android:gravity="center_vertical"
+            android:fontFamily="@font/alice"/>
+    </androidx.cardview.widget.CardView>
+</FrameLayout>

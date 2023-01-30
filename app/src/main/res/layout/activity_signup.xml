@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:background="#5c6bc0"
+        android:orientation="vertical">
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:src="@drawable/background" />
+    </LinearLayout>
+    <!--Imageview for Facebook logo image-->
+
+    <!--EditText for user name or email address-->
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/email"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="70dp"
+        android:layout_marginRight="20dp"
+        android:backgroundTint="#d3d3d3"
+        android:hint="Username or Email"
+        android:inputType="textEmailAddress"
+        android:maxLines="1"
+        android:padding="10dp"
+         />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="10dp"
+        android:id="@+id/phone"
+        android:layout_marginRight="20dp"
+        android:backgroundTint="#d3d3d3"
+        android:hint="Phone Number"
+        android:maxLines="1"
+        android:padding="10dp" />
+
+
+    <!--EditText for user password-->
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="20dp"
+        android:backgroundTint="#d3d3d3"
+        android:hint="Password"
+        android:id="@+id/password"
+        android:inputType="textPassword"
+        android:maxLines="1"
+        android:padding="10dp" />
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="20dp"
+        android:backgroundTint="#d3d3d3"
+        android:hint="Confirm Password"
+        android:inputType="textPassword"
+        android:maxLines="1"
+        android:padding="10dp" />
+
+    <!-- Login Button for Facebook Log In-->
+    <Button
+        android:id="@+id/btnSignup"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="35dp"
+        android:layout_marginRight="20dp"
+        android:backgroundTint="#5c6bc0"
+        android:padding="10dp"
+        android:text="Sign Up"
+        android:textSize="16sp"
+        android:textStyle="bold" />
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="80dp"
+        android:orientation="horizontal">
+
+
+        <Button
+            android:id="@+id/signin"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@android:color/transparent"
+            android:text="Already have an account?"
+            android:textAllCaps="false"
+            android:textColor="#5c6bc0"
+            android:textStyle="bold" />
+
+
+    </LinearLayout>
+
+
+
+
+
+</LinearLayout>
